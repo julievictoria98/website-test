@@ -1,0 +1,77 @@
+@import "_setup.scss";
+@import "_animations.scss";
+
+body {
+  background-color: $quaternary-color;
+}
+
+.content > *:not(.full-width, .pop-in) {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.pop-in {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.cta {
+  width: 100px;
+  height: 40px;
+  align-self: end;
+  justify-self: start;
+}
+#hero {
+  background-color: $primary-color;
+  color: $quaternary-color;
+  text-align: center;
+  height: 100vh;
+  padding: 10rem 4rem;
+
+  & > * {
+    text-align: left;
+  }
+}
+
+.content > * {
+  margin-bottom: 12rem;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+
+  & > * {
+    max-width: 15rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    & > * {
+      grid-template-rows: subgrid;
+      grid-row: span 3;
+    }
+  }
+}
+
+/* .news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.news-container > * {
+  max-width: 15rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.news-container > * > * {
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+ */

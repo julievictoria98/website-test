@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Variables
+$primary-color: #a89f91; // Muted warm beige
+$secondary-color: #3a3f45; // Dark desaturated gray-blue
+$tertiary-color: #b05a4a; // Soft earthy red (warm accent)
+$quaternary-color: #f4f4f2; // Off-white, light neutral
+
+// reset Styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Raleway", sans-serif;
+  color: $secondary-color;
+  line-height: 1.5;
+}
